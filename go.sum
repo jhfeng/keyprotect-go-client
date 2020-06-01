@@ -16,6 +16,8 @@ github.com/hashicorp/go-retryablehttp v0.6.0 h1:uuJM3gyY2D+1naT0kkGVZRQLf3AaXcyu
 github.com/hashicorp/go-retryablehttp v0.6.0/go.mod h1:EM1UNuajSSS84RdcM8GK0q0UIPtYqPHVLu9oE2Wm8FY=
 github.com/hashicorp/go-retryablehttp v0.6.2 h1:bHM2aVXwBtBJWxHtkSrWuI4umABCUczs52eiUS9nSiw=
 github.com/hashicorp/go-retryablehttp v0.6.2/go.mod h1:gEx6HMUGxYYhJScX7W1Il64m6cc2C1mDaW3NQ9sY1FY=
+github.com/jhfeng/libcurl-go v0.0.0-20200514232444-89f9623db6ba h1:L+xVKj7F5mrz8ByfsXfzqeABuJxYGoHRoX9/A0k0prc=
+github.com/jhfeng/libcurl-go v0.0.0-20200514232444-89f9623db6ba/go.mod h1:gkCNUfshlk0/1qEjk/iEDERCexkDHq8HhfWRgEn3ou4=
 github.com/nbio/st v0.0.0-20140626010706-e9e8d9816f32 h1:W6apQkHrMkS0Muv8G/TipAy/FJl/rCYT0+EuS8+Z0z4=
 github.com/nbio/st v0.0.0-20140626010706-e9e8d9816f32/go.mod h1:9wM+0iRr9ahx58uYLpLIr5fm8diHn0JbqRycJi6w0Ms=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=

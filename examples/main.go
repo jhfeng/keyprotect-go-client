@@ -33,16 +33,15 @@ func getConfigAuthToken() kp.ClientConfig {
 
 func getConfigAPIKey() kp.ClientConfig {
 	return kp.ClientConfig{
-		BaseURL:    kp.DefaultBaseURL,
-		APIKey:     "",
-		TokenURL:   kp.DefaultTokenURL,
-		InstanceID: "",
-		Verbose:    kp.VerboseFailOnly,
+		BaseURL:    "https://qsc-stage.kms.test.cloud.ibm.com:4443",
+                APIKey:     "",
+                TokenURL:   "https://iam.test.cloud.ibm.com/oidc/token",
+                InstanceID: "",
+                Verbose:    kp.VerboseFailOnly,
 	}
 }
 
 func standardKeyOperations(api *kp.API) {
-
 	fmt.Println("\nCreating standard key")
 	rootkey, err := api.CreateStandardKey(context.Background(), "mynewstandardkey", nil)
 	if err != nil {
@@ -90,7 +89,8 @@ func rootKeyOperations(api *kp.API) {
 
 	fmt.Println("\nWrapping root key")
 	aad := []string{"string1", "string2", "string3"}
-	plaintext := []byte("This is my fav root key")
+	//plaintext := []byte("This is my fav root key")
+	plaintext := []byte("NWvfrThUqP9aFmTWFgB86qztK2BuN0qIGg7K7kcCCRs=")
 	ciphertext, err := api.Wrap(context.Background(), keyid, plaintext, &aad)
 	if err != nil {
 		fmt.Println("Error wrapping the key: ", err)
